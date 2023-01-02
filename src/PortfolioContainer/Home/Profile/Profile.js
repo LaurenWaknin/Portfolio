@@ -12,7 +12,7 @@ export default function Profile() {
                         <a href='https://www.facebook.com/lauren.waknin/'>
                             <i className='fa fa-facebook-square'></i>
                         </a>
-                        <a href='https://www.linkedin.com/in/lauren-waknin-418251133/'>
+                        <a href='https://www.linkedin.com/in/lauren-waknin/'>
                             <i className='fa fa-linkedin'></i>
                         </a>
                         <a href='https://www.instagram.com/budbud_the_prince/'>
@@ -56,7 +56,7 @@ export default function Profile() {
                         </h1>
                         <span className='profile-role-tagline'>
                             Knack for building applications with front and back end 
-                            operations. 
+                            operations 
                         </span>
                     </span>
                 </div>
@@ -65,7 +65,7 @@ export default function Profile() {
                         {" "}
                         Contact Me{" "}
                     </button>
-                    <a href='LWResume.pdf' download='Lauren Waknin LWResume.pdf'>
+                    <a href='LaurenWakninResume.pdf' download='Lauren Waknin LaurenWakninResume.pdf'>
                         <button className='btn highlighted-btn'> Get Resume</button>
                     </a>
                 </div>
