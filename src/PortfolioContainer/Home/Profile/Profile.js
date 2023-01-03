@@ -9,21 +9,21 @@ export default function Profile() {
             <div className='profile-details'>
                 <div className='colz'>
                     <div className='colz-icon'>
-                        <a href='https://www.facebook.com/lauren.waknin/'>
+                        {/* <a href='https://www.facebook.com/lauren.waknin/'>
                             <i className='fa fa-facebook-square'></i>
-                        </a>
+                        </a> */}
                         <a href='https://www.linkedin.com/in/lauren-waknin/'>
                             <i className='fa fa-linkedin'></i>
                         </a>
-                        <a href='https://www.instagram.com/budbud_the_prince/'>
+                        {/* <a href='https://www.instagram.com/budbud_the_prince/'>
                             <i className='fa fa-instagram'></i>
-                        </a>
+                        </a> */}
                         <a href='https://github.com/LaurenWaknin'>
                             <i className='fa fa-github'></i>
                         </a>
-                        <a href='https://twitter.com/LaurenWaknin'>
+                        {/* <a href='https://twitter.com/LaurenWaknin'>
                             <i className='fa fa-twitter'></i>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 <div className='profile-details-name'>
