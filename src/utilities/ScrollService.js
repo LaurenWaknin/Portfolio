@@ -4,7 +4,7 @@ import { Subject } from "rxjs";
 export default class ScrollService {
     static scrollHandler = new ScrollService();
 
-    static currentScreenBroadCaster = new Subject()
+    static currentScreenBroadcaster = new Subject()
     static currentScreenFadeIn = new Subject()
 
     constructor(){
