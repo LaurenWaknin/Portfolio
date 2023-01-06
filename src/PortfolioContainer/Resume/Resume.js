@@ -4,14 +4,19 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
 
+// import education from "../../../src/assets/Resume/education.svg";
+// import workHistory from "../../../src/assets/Resume/work-history.svg";
+// import programmingSkills from "../../../src/assets/Resume/programming-skills.svg";
+// import projects from "../../../src/assets/Resume/projects.svg";
+// import interests from "../../../src/assets/Resume/interests.svg";
+
 const Resume = (props) => {
-  /* STATES */
+  /* STATES */  
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
-
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -24,9 +29,12 @@ const Resume = (props) => {
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>
-          {props.fromDate && props.toDate ? (
+          {/* {props.fromDate && props.toDate ? ( */}
+          {props.toDate ? (
+
             <div className="heading-date">
-              {props.fromDate + "-" + props.toDate}
+              {/* {props.fromDate + "-" + props.toDate} */}
+              {props.toDate}
             </div>
           ) : (
             <div></div>
@@ -51,7 +59,7 @@ const Resume = (props) => {
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
-  //here we have
+  //programming skills 
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
@@ -67,24 +75,24 @@ const Resume = (props) => {
   const projectsDetails = [
     {
       title: "Riding Buddies App",
-      duration: { fromDate: "12/2022", toDate: "01/2023" },
+    //   duration: { fromDate: "12/2022", toDate: "01/2023" },
       description:
-        "An appliaction that allows motorcycle users nearby to connect with eachother in order to ride together",
+        "An appliaction that allows motorcycle users nearby to connect with eachother in order to ride together.",
       subHeading: "Technologies Used: Leaflet API, JavaScript, React JS, JWT, MUI",
     },
     {
       title: "Budget Management App ",
-      duration: { fromDate: "11/2022", toDate: "12/2022" },
+    //   duration: { fromDate: "11/2022", toDate: "12/2022" },
       description:
-        "An application that allows the user to manage their monthly budget",
+        "An application that allows the user to manage their monthly budget.",
       subHeading:
         "Technologies Used:  JasvaScript, React JS,  Express Js, Node Js, Bootstrap",
     },
     {
       title: "Collect Coins Game ",
-      duration: { fromDate: "10/2022", toDate: "11/2022" },
+    //   duration: { fromDate: "10/2022", toDate: "11/2022" },
       description:
-        "Game where the goal is to collect as many coins possible without plumeting in the canyons",
+        "Game where the goal is to collect as many coins possible without plumeting in the canyons.",
       subHeading:
         "Technologies Used: JavaScript, HTML, CSS",
     },
@@ -95,20 +103,20 @@ const Resume = (props) => {
       <ResumeHeading
         heading={"Developers Institute"}
         subHeading={"Full Stack Web Development, JavaScript program"}
-        fromDate={"2022"}
-        toDate={"2023"}
+        // fromDate={"2022"}
+        toDate={"2022"}
       />
 
       <ResumeHeading
         heading={"Goldsmiths, University of London"}
         subHeading={"BSc Computer Science"}
-        fromDate={"2020"}
-        toDate={"Present"}
+        // fromDate={"2020"}
+        toDate={"Ongoing"}
       />
       <ResumeHeading
         heading={"Automotive Mechanics "}
         subHeading={"West Island Career Center"}
-        fromDate={"2014"}
+        // fromDate={"2014"}
         toDate={"2015"}
       />
     </div>,
@@ -119,7 +127,7 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"Developers Institute"}
           subHeading={"TEACHER ASSISTANT"}
-          fromDate={"2023"}
+        //   fromDate={"2023"}
           toDate={"Present"}
         />
         <div className="experience-description">
@@ -171,8 +179,8 @@ const Resume = (props) => {
           heading={projectsDetails.title}
           subHeading={projectsDetails.subHeading}
           description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
+        //   fromDate={projectsDetails.duration.fromDate}
+        //   toDate={projectsDetails.duration.toDate}
         />
       ))}
     </div>,
@@ -216,8 +224,8 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
-          alt="B"
+        //   src={require(`../../../public/images/${bullet.logoSrc}`).default}
+        //   alt="*"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
