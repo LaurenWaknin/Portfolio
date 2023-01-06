@@ -63,7 +63,8 @@ const Resume = (props) => {
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 80 },
+    { skill: "React Native", ratingPercentage: 60 },
+    { skill: "Redux", ratingPercentage: 70 },
     { skill: "Express JS", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
     { skill: "PostgreSQL", ratingPercentage: 90 },
@@ -132,20 +133,20 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as a Teacher Assistnat 
+            Currently working as a Teacher Assistant 
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Leading programming exercises and working directly with students to help guide them through a rigorous, transformational journey,
+            Leading programming exercises and working directly with students to help guide them through a rigorous, transformational journey.
           </span>
           <br />
           <span className="resume-description-text">
-            - Managing student pairings and groupings and providing guidance to team projects,{" "}
+            Managing student pairings and groupings and providing guidance to team projects.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-            - I prepare and make meetups for Developers Institute 
+            I prepare and make meetups for Developers Institute.
           </span>
           <br />
         </div>
