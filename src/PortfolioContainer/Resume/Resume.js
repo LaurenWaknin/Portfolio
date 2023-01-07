@@ -78,7 +78,7 @@ const Resume = (props) => {
       title: "Riding Buddies App",
     //   duration: { fromDate: "12/2022", toDate: "01/2023" },
       description:
-        "An appliaction that allows motorcycle users nearby to connect with eachother in order to ride together.",
+        "An appliaction that allows motorcycle users nearby to connect with each other in order to ride together.",
       subHeading: "Technologies Used: Leaflet API, JavaScript, React JS, JWT, MUI",
     },
     {
@@ -93,7 +93,7 @@ const Resume = (props) => {
       title: "Collect Coins Game ",
     //   duration: { fromDate: "10/2022", toDate: "11/2022" },
       description:
-        "Game where the goal is to collect as many coins possible without plumeting in the canyons.",
+        "Game where the goal is to collect as many coins possible without plumeting into canyons.",
       subHeading:
         "Technologies Used: JavaScript, HTML, CSS",
     },
@@ -125,10 +125,10 @@ const Resume = (props) => {
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
-        <ResumeHeading
+        {/* <ResumeHeading
           heading={"Developers Institute"}
           subHeading={"TEACHER ASSISTANT"}
-        //   fromDate={"2023"}
+          // fromDate={"2023"}
           toDate={"Present"}
         />
         <div className="experience-description">
@@ -149,7 +149,61 @@ const Resume = (props) => {
             I prepare and make meetups for Developers Institute.
           </span>
           <br />
+        </div> */}
+        
+        <ResumeHeading
+          heading={"Developers Institute"}
+          subHeading={"TEACHER ASSISTANT"}
+          // fromDate={"2023"}
+          toDate={"Present"}
+        />
+        <div className="experience-description">
+          {/* <span className="resume-description-text">
+            Currently working as a Teacher Assistant 
+          </span> */}
         </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Leading programming exercises and working directly with students to help guide them through a rigorous and transformational journey.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            Managing student pairings and groupings and providing guidance to team projects.{" "}
+          </span>
+          <br />
+          {/* <span className="resume-description-text">
+            I prepare and make meetups for Developers Institute.
+          </span>
+          <br /> */}
+        </div><br/>
+        <ResumeHeading
+          heading={"Philip Morris Ltd"}
+          subHeading={"EXTERNAL AFFAIRS EXECUTIVE"}
+          // fromDate={"2023"}
+          toDate={"2022"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Managed grant requests; assisted in managing
+            corporate affairs and communications budget.
+          </span>
+        </div>
+        {/* <div className="experience-description"> */}
+          {/* <span className="resume-description-text">
+            Procurement: Created purchase requisitions; coordinated with vendors;
+            validated invoices; managed account payable.
+          </span>
+          <br /> */}
+          <span className="resume-description-text">
+            Organized events; scheduled event halls; coordinated with staff
+            to optimize availability; dealt with unexpected issues.{" "}
+          </span>
+          <br />
+          <span className="resume-description-text">
+            Contributed to corporate communication campaigns.
+          </span>
+          <br />
+        {/* </div> */}
       </div>
     </div>,
 
@@ -190,16 +244,23 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        description="Apart from being a tech enthusiast and a code writer, I also love to teach people what I know simply because I enjoy sharing."
       />
       <ResumeHeading
         heading="Brazilian Jiu-Jitsu"
-        description="I love the discipline that BJJ instills upon me, not to mention it keeps healthy and fit."
+        description="I love the discipline that BJJ instills upon me, not to mention it keeps me healthy and fit."
       />
       <ResumeHeading
         heading="Motorcycles"
-        description="Riding a motorcycle brings both an adrenaline rush and a sense of calmness, depending on how you ride."
+        description="Riding a motorcycle creates a sense of excitement, while also bringing about an air of calm to the activity. It is an experience that I enjoy solo, but also one that I enjoy with other motorcycle riders."
       />
+      <ResumeHeading
+        heading="Photography"
+        description="Photographs help us share our memories with others. One of my favorite weekend pastimes, is taking a hike with my dog Buddy and capturing spontaneous photos of him. Check out the Instagram icon below. (He is a mini influencer 🐶) "      
+      />
+      <a style={{color: '#ff5823'}} href='https://www.instagram.com/budbud_the_prince/'>
+        <i className='fa fa-instagram'></i>
+      </a> 
     </div>,
   ];
 
@@ -257,7 +318,7 @@ const Resume = (props) => {
       id={props.id || ""}
     >
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My formal Bio Details"} />
+        <ScreenHeading title={"Resume"} subHeading={"My Formal Bio Details"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

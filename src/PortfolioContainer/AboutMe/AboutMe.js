@@ -14,17 +14,17 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-    "Full Stack Developer experienced in JavaScript based programming currently majoring in Computer Science. Determined and solution-oriented with a diverse portfolio of academic and professional experiences. Highly autonomous but also adept in team environments and in motivating others. I have a strong passion for technology, innovation and sustainability.",
+    "Full Stack Developer experienced in JavaScript-based programming and currently majoring in Computer Science. Determined and solution-oriented with a diverse portfolio of academic and professional experiences. Highly autonomous but also adept in team environments and in motivating others. I have a strong passion for technology, innovation and sustainability.",
     highlights: {
       bullets: [
         "Full Stack web and mobile development",
-        "Interactive Front End as per the design",
+        "Interactive Front End",
         "React and React Native",
         "Redux for State Management",
         "Building REST API's",
         "Managing database",
       ],
-      heading: "Here are a few highlights:",
+      heading: "Some Highlights:",
     },
   };
   const renderHighlight = () => {
@@ -63,7 +63,7 @@ export default function AboutMe(props) {
                 {" "}
                 Contact Me{" "}
               </button>
-              <a href="LaurenWakninResume.pdf" download="Lauren Waknin LaurenWakninResume.pdf">
+              <a href="LaurenWakninResume.pdf" download="LaurenWakninResume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

@@ -66,7 +66,7 @@ export default function ContactMe(props) {
 
   return (
     <div className="main-container fade-in" id={props.id || ""}>
-      <ScreenHeading subHeading={"Lets Keep In Touch"} title={"Contact Me"} />
+      <ScreenHeading subHeading={"Let's Keep In Touch"} title={"Contact Me"} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
@@ -75,12 +75,12 @@ export default function ContactMe(props) {
         <a href='https://www.linkedin.com/in/lauren-waknin/'>
             <i className='fa fa-linkedin'></i>
         </a>
-          <a href="https://www.facebook.com/lauren.waknin/">
+          {/* <a href="https://www.facebook.com/lauren.waknin/">
             <i className="fa fa-facebook-square" />
           </a>
           <a href="https://twitter.com/LaurenWaknin">
             <i className="fa fa-twitter" />
-          </a>
+          </a> */}
         </div>
         <div className="back-form">
           <div className="img-back">
