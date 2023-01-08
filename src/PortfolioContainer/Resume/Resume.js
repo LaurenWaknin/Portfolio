@@ -4,11 +4,6 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
 
-// import education from "../../../src/assets/Resume/education.svg";
-// import workHistory from "../../../src/assets/Resume/work-history.svg";
-// import programmingSkills from "../../../src/assets/Resume/programming-skills.svg";
-// import projects from "../../../src/assets/Resume/projects.svg";
-// import interests from "../../../src/assets/Resume/interests.svg";
 
 const Resume = (props) => {
   /* STATES */  
@@ -39,6 +34,9 @@ const Resume = (props) => {
           ) : (
             <div></div>
           )}
+        </div>
+        <div className="resume-link">
+          <a href='props.link'>{props.link ? props.link : ""}</a>
         </div>
         <div className="resume-sub-heading">
           <span>{props.subHeading ? props.subHeading : ""}</span>
@@ -77,25 +75,37 @@ const Resume = (props) => {
     {
       title: "Riding Buddies App",
     //   duration: { fromDate: "12/2022", toDate: "01/2023" },
+      link: "https://riding-buddy-main.onrender.com",
       description:
-        "An appliaction that allows motorcycle users nearby to connect with each other in order to ride together.",
+        "An appliaction that allows motorcycle users to connect with each other in order to ride together.",
       subHeading: "Technologies Used: Leaflet API, JavaScript, React JS, JWT, MUI",
     },
     {
       title: "Budget Management App ",
     //   duration: { fromDate: "11/2022", toDate: "12/2022" },
+      link: "https://budget-app-kzi6.onrender.com",
       description:
         "An application that allows the user to manage their monthly budget.",
       subHeading:
         "Technologies Used:  JasvaScript, React JS,  Express Js, Node Js, Bootstrap",
     },
     {
+      title: "Drawing App ",
+    //   duration: { fromDate: "10/2022", toDate: "11/2022" },
+      link: "https://github.com/LaurenWaknin/Drawing-App",
+      description:
+        "Drawing Application with various tools.",
+      subHeading:
+        "Technologies Used: JavaScript, HTML, CSS, P5.js",
+    },
+    {
       title: "Collect Coins Game ",
     //   duration: { fromDate: "10/2022", toDate: "11/2022" },
+      link: "https://github.com/LaurenWaknin/Coin-game",
       description:
         "Game where the goal is to collect as many coins possible without plumeting into canyons.",
       subHeading:
-        "Technologies Used: JavaScript, HTML, CSS",
+        "Technologies Used: JavaScript, HTML, CSS, P5.js",
     },
   ];
 
@@ -164,11 +174,11 @@ const Resume = (props) => {
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            Leading programming exercises and working directly with students to help guide them through a rigorous and transformational journey.
+            - Leading programming exercises and working directly with students to help guide them through a rigorous and transformational journey.
           </span>
           <br />
           <span className="resume-description-text">
-            Managing student pairings and groupings and providing guidance to team projects.{" "}
+            - Managing student pairings and groupings and providing guidance to team projects.{" "}
           </span>
           <br />
           {/* <span className="resume-description-text">
@@ -184,7 +194,7 @@ const Resume = (props) => {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Managed grant requests; assisted in managing
+            - Managed grant requests; assisted in managing
             corporate affairs and communications budget.
           </span>
         </div>
@@ -195,12 +205,12 @@ const Resume = (props) => {
           </span>
           <br /> */}
           <span className="resume-description-text">
-            Organized events; scheduled event halls; coordinated with staff
+            - Organized events; scheduled event halls; coordinated with staff
             to optimize availability; dealt with unexpected issues.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-            Contributed to corporate communication campaigns.
+            - Contributed to corporate communication campaigns.
           </span>
           <br />
         {/* </div> */}
@@ -225,13 +235,13 @@ const Resume = (props) => {
         </div>
       ))}
     </div>,
-
     /* PROJECTS */
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
           key={index}
           heading={projectsDetails.title}
+          link={projectsDetails.link}
           subHeading={projectsDetails.subHeading}
           description={projectsDetails.description}
         //   fromDate={projectsDetails.duration.fromDate}
@@ -239,7 +249,7 @@ const Resume = (props) => {
         />
       ))}
     </div>,
-
+    
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
@@ -284,10 +294,9 @@ const Resume = (props) => {
         }
         key={index}
       >
-        <img
-          className="bullet-logo"
-        //   src={require(`../../../public/images/${bullet.logoSrc}`).default}
-        //   alt="*"
+        <img className="bullet-logo"
+          src={require(`../../assets/Resume/${bullet.logoSrc}`)}
+          alt="bullet logo"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
