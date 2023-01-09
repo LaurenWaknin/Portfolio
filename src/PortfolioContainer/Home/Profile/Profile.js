@@ -13,13 +13,13 @@ export default function Profile() {
                         {/* <a href='https://www.facebook.com/lauren.waknin/'>
                             <i className='fa fa-facebook-square'></i>
                         </a> */}
-                        <a href='https://www.linkedin.com/in/lauren-waknin/'>
+                        <a href='https://www.linkedin.com/in/lauren-waknin/' target="_blank">
                             <i className='fa fa-linkedin'></i>
                         </a>
                         {/* <a href='https://www.instagram.com/budbud_the_prince/'>
                             <i className='fa fa-instagram'></i>
                         </a> */}
-                        <a href='https://github.com/LaurenWaknin'>
+                        <a href='https://github.com/LaurenWaknin' target="_blank">
                             <i className='fa fa-github'></i>
                         </a>
                         {/* <a href='https://twitter.com/LaurenWaknin'>
@@ -64,7 +64,7 @@ export default function Profile() {
                     <button className='btn primary-btn'
                     onClick={() => ScrollService.scrollHandler.scrollToHireMe()}     
                     > Contact Me </button>
-                    <a href='LaurenWakninResume.pdf' download='Lauren Waknin LaurenWakninResume.pdf'>
+                    <a href='LaurenWakninResume.pdf' download='LaurenWakninResume.pdf'>
                         <button className='btn highlighted-btn'> Get Resume</button>
                     </a>
                 </div>

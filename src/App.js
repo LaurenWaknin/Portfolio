@@ -1,11 +1,15 @@
+import {Helmet} from "react-helmet";
 import './App.css'
-// import Home from './PortfolioContainer/Home/Home';
 import PortfolioContainer from './PortfolioContainer/PortfolioContaner';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Home/> */}
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Lauren's Portfolio</title>
+      </Helmet>
       <PortfolioContainer/>
     </div>
   );

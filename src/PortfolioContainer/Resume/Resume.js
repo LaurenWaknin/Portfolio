@@ -10,6 +10,16 @@ const Resume = (props) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
+  const ridingBuddyUrl = "https://riding-buddy-main.onrender.com"
+  const ridingBuddyApp = <a href={ridingBuddyUrl} target="_blank">Riding Buddy App</a>
+  const budgetAppUrl = "https://budget-app-kzi6.onrender.com"
+  const budgetApp = <a href={budgetAppUrl} target="_blank">Budget Management App</a>
+  const coinGameUrl = "https://github.com/LaurenWaknin/Coin-game"
+  const coinGameApp = <a href={coinGameUrl} target="_blank">Collect Coins Game</a>
+  const drawingAppUrl = "https://github.com/LaurenWaknin/Drawing-App"
+  const drwingApp = <a href={drawingAppUrl} target="_blank">Drawing App</a>
+
+
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -73,35 +83,35 @@ const Resume = (props) => {
 
   const projectsDetails = [
     {
-      title: "Riding Buddies App",
+      title: ridingBuddyApp,
     //   duration: { fromDate: "12/2022", toDate: "01/2023" },
-      link: "https://riding-buddy-main.onrender.com",
+      // link: "https://riding-buddy-main.onrender.com",
       description:
         "An appliaction that allows motorcycle users to connect with each other in order to ride together.",
       subHeading: "Technologies Used: Leaflet API, JavaScript, React JS, JWT, MUI",
     },
     {
-      title: "Budget Management App ",
+      title: budgetApp,
     //   duration: { fromDate: "11/2022", toDate: "12/2022" },
-      link: "https://budget-app-kzi6.onrender.com",
+      // link: "https://budget-app-kzi6.onrender.com",
       description:
         "An application that allows the user to manage their monthly budget.",
       subHeading:
         "Technologies Used:  JasvaScript, React JS,  Express Js, Node Js, Bootstrap",
     },
     {
-      title: "Drawing App ",
+      title: drwingApp,
     //   duration: { fromDate: "10/2022", toDate: "11/2022" },
-      link: "https://github.com/LaurenWaknin/Drawing-App",
+      // link: "https://github.com/LaurenWaknin/Drawing-App",
       description:
         "Drawing Application with various tools.",
       subHeading:
         "Technologies Used: JavaScript, HTML, CSS, P5.js",
     },
     {
-      title: "Collect Coins Game ",
+      title: coinGameApp,
     //   duration: { fromDate: "10/2022", toDate: "11/2022" },
-      link: "https://github.com/LaurenWaknin/Coin-game",
+      // link: "https://github.com/LaurenWaknin/Coin-game",
       description:
         "Game where the goal is to collect as many coins possible without plumeting into canyons.",
       subHeading:
@@ -164,7 +174,7 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"Developers Institute"}
           subHeading={"TEACHER ASSISTANT"}
-          // fromDate={"2023"}
+          fromDate={"2023"}
           toDate={"Present"}
         />
         <div className="experience-description">
@@ -189,8 +199,8 @@ const Resume = (props) => {
         <ResumeHeading
           heading={"Philip Morris Ltd"}
           subHeading={"EXTERNAL AFFAIRS EXECUTIVE"}
-          // fromDate={"2023"}
-          toDate={"2022"}
+          // fromDate={"2017"}
+          toDate={"2017-2022"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
