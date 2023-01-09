@@ -71,15 +71,9 @@ export default function ContactMe(props) {
           <h2 className="title">
             <TypeAnimation sequence={["Get In Touch 📧", 1000]} />
           </h2>{" "}
-        <a href='https://www.linkedin.com/in/lauren-waknin/'>
-            <i className='fa fa-linkedin'></i>
-        </a>
-          {/* <a href="https://www.facebook.com/lauren.waknin/">
-            <i className="fa fa-facebook-square" />
+          <a href='https://www.linkedin.com/in/lauren-waknin/'>
+              <i className='fa fa-linkedin'></i>
           </a>
-          <a href="https://twitter.com/LaurenWaknin">
-            <i className="fa fa-twitter" />
-          </a> */}
         </div>
         <div className="back-form">
           <div className="img-back">
