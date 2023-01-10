@@ -278,7 +278,7 @@ const Resume = (props) => {
         heading="Photography"
         description="Photographs help us share our memories with others. One of my favorite weekend pastimes, is taking a hike with my dog Buddy and capturing spontaneous photos of him. Check out the Instagram icon below. (He is a mini influencer 🐶) "      
       />
-      <a style={{color: '#ff5823'}} href='https://www.instagram.com/budbud_the_prince/'>
+      <a style={{color: '#ff5823'}} href='https://www.instagram.com/budbud_the_prince/' target="_blank">
         <i className='fa fa-instagram'></i>
       </a> 
     </div>,
