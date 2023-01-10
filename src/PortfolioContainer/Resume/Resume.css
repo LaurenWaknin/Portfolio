@@ -9,7 +9,7 @@
 
 .resume-card {
     display: flex;
-    height: 362px;
+    height: 360px;
     width: 1000px;
     /* margin: 80px 0; */
 }
@@ -187,6 +187,24 @@
     font-family: "Poppins Bold";
     font-size: 16px;
     color: #ff5823;
+}
+
+@media only screen and (max-width: 400px) {
+.resume-main-heading{
+    font-size: 12px;
+}
+.resume-heading-description{
+    font-size: 10px;
+}
+.resume-description-text {
+    font-size: 10px;
+}
+.resume-sub-heading{
+    font-size: 12px;
+}
+.experience-description{
+    font-size: 12px;
+}
 }
 
 /* IPAD PRO RESPONSIVENESS */
