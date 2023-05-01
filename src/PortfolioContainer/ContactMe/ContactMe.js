@@ -71,14 +71,14 @@ export default function ContactMe(props) {
           <h2 className="title">
             <TypeAnimation sequence={["Get In Touch 📧", 1000]} />
           </h2>{" "}
-          <a href='https://www.linkedin.com/in/lauren-waknin/' target="_blank">
+          <a href='https://www.linkedin.com/in/lauren-waknin/' target="_blank" rel="noreferrer">
               <i className='fa fa-linkedin'></i>
           </a>
         </div>
         <div className="back-form">
           <div className="img-back">
             <h4>Send Your Email Here!</h4>
-            <img src={imgBack} alt="image not found" />
+            <img src={imgBack} alt="not found" />
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>
@@ -97,7 +97,7 @@ export default function ContactMe(props) {
                 <i className="fa fa-paper-plane" />
                 {bool ? (
                   <b className="load">
-                    <img src={load1} alt="image not responding" />
+                    <img src={load1} alt="not responding" />
                   </b>
                 ) : (
                   ""

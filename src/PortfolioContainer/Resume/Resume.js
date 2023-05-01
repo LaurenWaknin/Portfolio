@@ -11,13 +11,13 @@ const Resume = (props) => {
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({});
 
   const ridingBuddyUrl = "https://riding-buddy-main.onrender.com"
-  const ridingBuddyApp = <a href={ridingBuddyUrl} target="_blank">Riding Buddy App</a>
+  const ridingBuddyApp = <a href={ridingBuddyUrl} target="_blank" rel="noreferrer">Riding Buddy App</a>
   const budgetAppUrl = "https://budget-app-kzi6.onrender.com"
-  const budgetApp = <a href={budgetAppUrl} target="_blank">Budget Management App</a>
-  const coinGameUrl = "https://github.com/LaurenWaknin/Coin-game"
-  const coinGameApp = <a href={coinGameUrl} target="_blank">Collect Coins Game</a>
-  const drawingAppUrl = "https://github.com/LaurenWaknin/Drawing-App"
-  const drwingApp = <a href={drawingAppUrl} target="_blank">Drawing App</a>
+  const budgetApp = <a href={budgetAppUrl} target="_blank" rel="noreferrer">Budget Management App</a>
+  const coinGameUrl = "https://laurenwaknin.github.io/Coin-game/"
+  const coinGameApp = <a href={coinGameUrl} target="_blank" rel="noreferrer">Collect Coins Game</a>
+  const drawingAppUrl = "https://laurenwaknin.github.io/Drawing-App/"
+  const drwingApp = <a href={drawingAppUrl} target="_blank" rel="noreferrer">Drawing App</a>
 
 
   let fadeInScreenHandler = (screen) => {
@@ -278,7 +278,7 @@ const Resume = (props) => {
         heading="Photography"
         description="Photographs help us share our memories with others. One of my favorite weekend pastimes, is taking a hike with my dog Buddy and capturing spontaneous photos of him. Check out the Instagram icon below. (He is a mini influencer 🐶) "      
       />
-      <a style={{color: '#ff5823'}} href='https://www.instagram.com/budbud_the_prince/' target="_blank">
+      <a style={{color: '#ff5823'}} href='https://www.instagram.com/budbud_the_prince/' target="_blank" rel="noreferrer">
         <i className='fa fa-instagram'></i>
       </a> 
     </div>,
