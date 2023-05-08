@@ -35,33 +35,54 @@ export default function ContactMe(props) {
     setMessage(e.target.value);
   };
   console.log(name);
-  const submitForm = async (e) => {
-    e.preventDefault();
-    try {
-      let data = {
-        name,
-        email,
-        message,
-      };
-      setBool(true);
-      const res = await axios.post(`/contact`, data);
-      if (name.length === 0 || email.length === 0 || message.length === 0) {
-        setBanner(res.data.msg);
-        toast.error(res.data.msg);
-        setBool(false);
-      } else if (res.status === 200) {
-        setBanner(res.data.msg);
-        toast.success(res.data.msg);
-        setBool(false);
 
-        setName("");
-        setEmail("");
-        setMessage("");
-      }
-    } catch (error) {
-      console.log(error);
+
+  // const submitForm = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     let data = {
+  //       name,
+  //       email,
+  //       message,
+  //     };
+  //     setBool(true);
+  //     const res = await axios.post(`/contact`, data);
+  //     if (name.length === 0 || email.length === 0 || message.length === 0) {
+  //       setBanner(res.data.msg);
+  //       toast.error(res.data.msg);
+  //       setBool(false);
+  //     } else if (res.status === 200) {
+  //       setBanner(res.data.msg);
+  //       toast.success(res.data.msg);
+  //       setBool(false);
+
+  //       setName("");
+  //       setEmail("");
+  //       setMessage("");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    fetch('https://formspree.io/f/xeqwnakb', {
+      method: 'POST',
+      body: JSON.stringify({ name, email, message }),
+      headers: { 'Content-Type': 'application/json' },
+    })
+    .then((res) => {
+    if(res.ok){
+      alert("Thank you for reaching out!")
+    }else{
+      alert("Something went wrong please check your info")
     }
-  };
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+  }
 
   return (
     <div className="main-container fade-in" id={props.id || ""}>
