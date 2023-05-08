@@ -35,7 +35,7 @@ export default function ContactMe(props) {
     setMessage(e.target.value);
   };
   console.log(name);
-
+ 
 
   // const submitForm = async (e) => {
   //   e.preventDefault();
@@ -73,9 +73,15 @@ export default function ContactMe(props) {
       headers: { 'Content-Type': 'application/json' },
     })
     .then((res) => {
+    // setBool(false);
     if(res.ok){
+      setName("");
+      setEmail("");
+      setMessage("");      
       alert("Thank you for reaching out!")
+      // setBool(true);
     }else{
+      // setBool(false);
       alert("Something went wrong please check your info")
     }
     })
